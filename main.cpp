@@ -9,7 +9,6 @@
 
 using namespace std;
 
-// --- Линейный поиск ---
 int searchSubstring(string &text, string &pattern) {
     int n = text.length();
     int m = pattern.length();
@@ -29,7 +28,6 @@ int searchSubstring(string &text, string &pattern) {
     return count;
 }
 
-// --- KMP ---
 vector<int> computeLps(string pattern) {
     int n = pattern.length();
     vector<int> lps(n, 0);
